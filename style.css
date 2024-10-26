@@ -23,6 +23,7 @@ header .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 header .menu .logo {
   display: flex;
@@ -39,7 +40,7 @@ header .menu .search-menu {
   gap: 16px;
 }
 header .menu .search-menu button {
-  width: 140px;
+  width: auto;
   height: 40px;
   background-color: #70C05B;
   border: none;
@@ -51,6 +52,7 @@ header .menu .search-menu button {
   cursor: pointer;
   padding: 10px;
   border-radius: 8px;
+  margin-left: 15px;
 }
 header .menu .search-menu button i {
   font-size: 25px;
@@ -66,6 +68,7 @@ header .menu .search-menu .input {
   align-items: center;
   padding: 5px;
   justify-content: space-between;
+  margin-right: 15px;
 }
 header .menu .search-menu .input input {
   width: 100%;
@@ -107,4 +110,27 @@ header .menu .header-right .accaunt img {
 header .menu .header-right .accaunt h3 {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  header .menu .logo {
+    margin-right: 10px;
+  }
+  header .menu .logo h2 {
+    display: none;
+  }
+  header .menu .search-menu button span {
+    display: none;
+  }
+  header .menu .header-right .accaunt h3 {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  header .menu .search-menu button {
+    display: none;
+  }
+  header .menu .header-right {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

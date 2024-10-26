@@ -24,6 +24,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 10px;
 
         .logo {
             display: flex;
@@ -43,7 +44,7 @@ header {
 
 
             button {
-                width: 140px;
+                width: auto;
                 height: 40px;
                 background-color: #70C05B;
                 border: none;
@@ -55,6 +56,7 @@ header {
                 cursor: pointer;
                 padding: 10px;
                 border-radius: 8px;
+                margin-left: 15px;
 
                 i {
                     font-size: 25px;
@@ -72,6 +74,7 @@ header {
                 align-items: center;
                 padding: 5px;
                 justify-content: space-between;
+                margin-right: 15px;
 
                 input {
                     width: 100%;
@@ -127,3 +130,6 @@ header {
         }
     }
 }
+
+
+@import './responsive'
