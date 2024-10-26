@@ -1,1 +1,110 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Rubik";
+}
+
+header {
+  width: 100%;
+  height: 72px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+header .menu {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #414141;
+}
+header .menu .logo h2 {
+  font-size: 20px;
+}
+header .menu .search-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .menu .search-menu button {
+  width: 140px;
+  height: 40px;
+  background-color: #70C05B;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+}
+header .menu .search-menu button i {
+  font-size: 25px;
+  font-weight: normal;
+}
+header .menu .search-menu .input {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+header .menu .search-menu .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+}
+header .menu .search-menu .input i {
+  font-size: 25px;
+  color: #414141;
+}
+header .menu .header-right {
+  display: flex;
+  gap: 24px;
+}
+header .menu .header-right .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .menu .header-right .box i {
+  font-size: 25px;
+  font-weight: normal;
+  color: #414141;
+}
+header .menu .header-right .box p {
+  font-size: 12px;
+}
+header .menu .header-right .accaunt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .menu .header-right .accaunt img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+header .menu .header-right .accaunt h3 {
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
