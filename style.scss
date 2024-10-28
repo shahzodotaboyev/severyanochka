@@ -131,5 +131,129 @@ header {
     }
 }
 
+main {
+    background: #FBF8EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .free {
+        max-width: 1440px;
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        object-fit: cover;
+        
+    }
+    
+    section {
+        padding: 10px;
+        max-width: 1200px;
+        width: 100%;
+        margin-top: 80px;
+
+        .aksiya {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 60px;
+
+            .aksiya-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                h1 {
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #414141;
+                }
+
+                a {
+                    color: #606060;
+                }
+            }
+
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .card {
+                    width: 272px;
+                    height: 349px;
+                    background-color: #fff;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .inf {
+                        max-width: 226px;
+                        padding: 10px;
+
+                        .summa {
+                            // max-width: 210px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            h4 {
+                                font-size: 18px;
+                                color: #414141;
+                            }
+
+                            h5 {
+                                font-size: 16px;
+                                font-weight: normal;
+                                color: #606060;
+                            }
+
+                            p {
+                                font-size: 12px;
+                                font-weight: normal;
+                                color: #BFBFBF;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            max-width: 210px;
+                            margin: 8px 0;
+                        }
+
+                        .stars {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+
+                            img {
+                                width: 16px;
+                            }
+                        }
+                        button{
+                            width: 210px;
+                            height: 40px;
+                            border: 1px solid #70C05B;
+                            border-radius: 8px;
+                            color: #70C05B;
+                            cursor: pointer;
+                            margin-top: 10px;
+                            transition: all 0.3s ease-in;
+                            &:hover{
+                                background-color: #FF6633;
+                                border: none;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 
 @import './responsive'

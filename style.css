@@ -112,6 +112,112 @@ header .menu .header-right .accaunt h3 {
   font-weight: 400;
 }
 
+main {
+  background: #FBF8EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .free {
+  max-width: 1440px;
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section {
+  padding: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 80px;
+}
+main section .aksiya {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+main section .aksiya .aksiya-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+main section .aksiya .aksiya-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #414141;
+}
+main section .aksiya .aksiya-header a {
+  color: #606060;
+}
+main section .aksiya .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .aksiya .cards .card {
+  width: 272px;
+  height: 349px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+main section .aksiya .cards .card img {
+  width: 100%;
+}
+main section .aksiya .cards .card .inf {
+  max-width: 226px;
+  padding: 10px;
+}
+main section .aksiya .cards .card .inf .summa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .aksiya .cards .card .inf .summa h4 {
+  font-size: 18px;
+  color: #414141;
+}
+main section .aksiya .cards .card .inf .summa h5 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #606060;
+}
+main section .aksiya .cards .card .inf .summa p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #BFBFBF;
+}
+main section .aksiya .cards .card .inf p {
+  font-size: 16px;
+  max-width: 210px;
+  margin: 8px 0;
+}
+main section .aksiya .cards .card .inf .stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+main section .aksiya .cards .card .inf .stars img {
+  width: 16px;
+}
+main section .aksiya .cards .card .inf button {
+  width: 210px;
+  height: 40px;
+  border: 1px solid #70C05B;
+  border-radius: 8px;
+  color: #70C05B;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in;
+}
+main section .aksiya .cards .card .inf button:hover {
+  background-color: #FF6633;
+  border: none;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   header .menu .logo {
     margin-right: 10px;
