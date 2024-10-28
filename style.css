@@ -126,6 +126,9 @@ main .free {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .free570px {
+  display: none;
+}
 main section {
   padding: 10px;
   max-width: 1200px;
@@ -159,7 +162,7 @@ main section .aksiya .cards {
 }
 main section .aksiya .cards .card {
   width: 272px;
-  height: 349px;
+  height: auto;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -167,7 +170,7 @@ main section .aksiya .cards .card img {
   width: 100%;
 }
 main section .aksiya .cards .card .inf {
-  max-width: 226px;
+  max-width: 100%;
   padding: 10px;
 }
 main section .aksiya .cards .card .inf .summa {
@@ -191,8 +194,8 @@ main section .aksiya .cards .card .inf .summa p {
 }
 main section .aksiya .cards .card .inf p {
   font-size: 16px;
-  max-width: 210px;
   margin: 8px 0;
+  font-weight: 400;
 }
 main section .aksiya .cards .card .inf .stars {
   display: flex;
@@ -218,6 +221,14 @@ main section .aksiya .cards .card .inf button:hover {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  main .free {
+    display: none;
+  }
+  main section .aksiya .cards .card:nth-child(4) {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   header .menu .logo {
     margin-right: 10px;
@@ -231,8 +242,22 @@ main section .aksiya .cards .card .inf button:hover {
   header .menu .header-right .accaunt h3 {
     display: none;
   }
+  main section .aksiya .cards .card:nth-child(3) {
+    display: none;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 570px) {
+  main section .aksiya .aksiya-header h1 {
+    font-size: 22px;
+  }
+  main section .aksiya .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 460px) {
   header .menu .search-menu button {
     display: none;
   }
