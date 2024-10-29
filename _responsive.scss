@@ -118,6 +118,8 @@
                 .special-offers-cards{
                     display: flex;
                     flex-direction: column;
+                    gap: 15px;
+
                     .card{
                         width: 100%;
                         display: flex;

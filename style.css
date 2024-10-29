@@ -356,6 +356,7 @@ main section .lacation-shop .map {
   main section .special-offers .special-offers-cards {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   main section .special-offers .special-offers-cards .card {
     width: 100%;
