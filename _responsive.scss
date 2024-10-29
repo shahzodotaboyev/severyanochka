@@ -139,6 +139,15 @@
                     }
                 }
             }
+            .lacation-shop{
+                h1{
+                    font-size: 28px;
+                }
+                .filials{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
         }
     }
    

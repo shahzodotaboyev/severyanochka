@@ -262,6 +262,37 @@ main section .special-offers-cards .card img {
 main section .special-offers-cards .card:nth-child(2) {
   background: #E5FFDE;
 }
+main section .lacation-shop {
+  margin: 60px 0;
+}
+main section .lacation-shop .filials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 395px;
+  margin: 44px 0 28px;
+}
+main section .lacation-shop .filials button {
+  width: 100px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+main section .lacation-shop .filials button:hover {
+  background: #70C05B;
+  color: #fff;
+}
+main section .lacation-shop .filials button:first-child {
+  background: #70C05B;
+  color: #fff;
+}
+main section .lacation-shop .map {
+  width: 100%;
+  height: 354px;
+}
 
 @media (max-width: 1024px) {
   main .free {
@@ -342,5 +373,12 @@ main section .special-offers-cards .card:nth-child(2) {
   }
   main section .special-offers .special-offers-cards .card:nth-child(2) img {
     max-width: 160px;
+  }
+  main section .lacation-shop h1 {
+    font-size: 28px;
+  }
+  main section .lacation-shop .filials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
