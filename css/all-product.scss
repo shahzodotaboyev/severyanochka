@@ -250,7 +250,18 @@ main {
 
     }
 }
-
+.pages{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+img{
+    max-width: 656px;
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+}
 footer {
     max-width: 1300px;
     margin: auto;
