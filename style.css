@@ -224,6 +224,44 @@ main section h1 {
   font-size: 36px;
   color: #414141;
 }
+main section .special-offers-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+main section .special-offers-cards .card {
+  width: 48%;
+  height: 200px;
+  background: #FCD5BA;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main section .special-offers-cards .card .card-left {
+  width: 50%;
+  max-width: 256px;
+  margin: 10px;
+}
+main section .special-offers-cards .card .card-left h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+main section .special-offers-cards .card .card-left p {
+  font-size: 16px;
+  color: #414141;
+  margin-top: 10px;
+}
+main section .special-offers-cards .card img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section .special-offers-cards .card:nth-child(2) {
+  background: #E5FFDE;
+}
 
 @media (max-width: 1024px) {
   main .free {
@@ -249,6 +287,19 @@ main section h1 {
   main section .aksiya .cards .card:nth-child(3) {
     display: none;
   }
+  main section .special-offers .special-offers-cards .card {
+    height: 170px;
+  }
+  main section .special-offers .special-offers-cards .card .card-left {
+    max-width: 174px;
+  }
+  main section .special-offers .special-offers-cards .card .card-left h1 {
+    font-size: 18px;
+    width: 174px;
+  }
+  main section .special-offers .special-offers-cards .card .card-left p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 570px) {
   main section .aksiya .aksiya-header h1 {
@@ -267,5 +318,29 @@ main section h1 {
   }
   header .menu .header-right {
     display: none;
+  }
+  main section .special-offers h1 {
+    font-size: 24px;
+  }
+  main section .special-offers .special-offers-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .special-offers .special-offers-cards .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main section .special-offers .special-offers-cards .card .card-left {
+    width: 60%;
+  }
+  main section .special-offers .special-offers-cards .card .card-left h1 {
+    font-size: 20px;
+  }
+  main section .special-offers .special-offers-cards .card img {
+    max-width: 200px;
+  }
+  main section .special-offers .special-offers-cards .card:nth-child(2) img {
+    max-width: 160px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -53,6 +53,25 @@
                 }
             }
         }
+        section{
+            .special-offers{
+                .special-offers-cards{
+                    .card{
+                        height: 170px;
+                        .card-left{
+                            max-width: 174px;
+                            h1{
+                                font-size: 18px;
+                                width: 174px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:570px) {
@@ -73,6 +92,7 @@
                 }
             }
         }
+      
     }
 }
 @media (max-width:460px) {
@@ -86,6 +106,38 @@
 
             .header-right {
                 display: none;
+            }
+        }
+    }
+    main{
+        section{
+            .special-offers{
+                h1{
+                    font-size: 24px;
+                }
+                .special-offers-cards{
+                    display: flex;
+                    flex-direction: column;
+                    .card{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .card-left{
+                            width: 60%;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        img{
+                            max-width: 200px;
+                        }
+                    }
+                    .card:nth-child(2){
+                        img{
+                            max-width: 160px;
+                        }
+                    }
+                }
             }
         }
     }
