@@ -1,17 +1,40 @@
 @media (max-width:1024px) {
-    main{
-            .free{
-                display: none;
+    main {
+        .free {
+            display: none;
+        }
+
+        section {
+            .aksiya {
+                .cards {
+                    .card:nth-child(4) {
+                        display: none;
+                    }
+                }
             }
-            section{
-                .aksiya{
-                    .cards{
-                        .card:nth-child(4){
-                           display: none;
+        }
+
+        section {
+            .articles {
+                .articles-cards {
+                    .articles-card {
+                        height: auto;
+
+                        .articles-inf {
+                            h3 {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
                         }
                     }
                 }
             }
+        }
     }
 }
 
@@ -43,28 +66,33 @@
             }
         }
     }
-    main{
-        section{
-            .aksiya{
-                .cards{
-                    .card:nth-child(3){
-                       display: none;
+
+    main {
+        section {
+            .aksiya {
+                .cards {
+                    .card:nth-child(3) {
+                        display: none;
                     }
                 }
             }
         }
-        section{
-            .special-offers{
-                .special-offers-cards{
-                    .card{
+
+        section {
+            .special-offers {
+                .special-offers-cards {
+                    .card {
                         height: 170px;
-                        .card-left{
+
+                        .card-left {
                             max-width: 174px;
-                            h1{
+
+                            h1 {
                                 font-size: 18px;
                                 width: 174px;
                             }
-                            p{
+
+                            p {
                                 font-size: 12px;
                             }
                         }
@@ -74,32 +102,67 @@
         }
     }
 }
+
 @media (max-width:570px) {
-    main{
-       
-        section{
-            .aksiya{
-                .aksiya-header{
-                    h1{
+    main {
+
+        section {
+            .aksiya {
+                .aksiya-header {
+                    h1 {
                         font-size: 22px;
                     }
                 }
-                .cards{
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  gap: 15px;
+
+                .cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
                 }
             }
         }
-      
+
+        section {
+            .articles {
+                .articles-cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    .articles-card {
+                        width: 100%;
+                        height: 300px;
+                        img{
+                            height: 96px;
+                            overflow: hidden;
+                            object-fit: cover;
+                        }
+
+                        .articles-inf {
+                            h3 {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
+
 @media (max-width:460px) {
     header {
         .menu {
             .search-menu {
-                button{
+                button {
                     display: none;
                 }
             }
@@ -109,48 +172,57 @@
             }
         }
     }
-    main{
-        section{
-            .special-offers{
-                h1{
+
+    main {
+        section {
+            .special-offers {
+                h1 {
                     font-size: 24px;
                 }
-                .special-offers-cards{
+
+                .special-offers-cards {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
 
-                    .card{
+                    .card {
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
-                        .card-left{
+
+                        .card-left {
                             width: 60%;
-                            h1{
+
+                            h1 {
                                 font-size: 20px;
                             }
                         }
-                        img{
+
+                        img {
                             max-width: 200px;
                         }
                     }
-                    .card:nth-child(2){
-                        img{
+
+                    .card:nth-child(2) {
+                        img {
                             max-width: 160px;
                         }
                     }
                 }
             }
-            .lacation-shop{
-                h1{
+
+            .lacation-shop {
+                h1 {
                     font-size: 28px;
                 }
-                .filials{
+
+                .filials {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr  1fr;
+                    gap: 10px;
                 }
             }
         }
     }
-   
+
 }

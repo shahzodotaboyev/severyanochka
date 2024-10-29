@@ -293,6 +293,68 @@ main section .lacation-shop .map {
   width: 100%;
   height: 354px;
 }
+main section .articles .articles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .articles .articles-header a {
+  color: #414141;
+}
+main section .articles .articles-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+main section .articles .articles-cards .articles-card {
+  width: 30%;
+  height: 420px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 8px;
+}
+main section .articles .articles-cards .articles-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+main section .articles .articles-cards .articles-card .articles-inf {
+  padding: 10px;
+}
+main section .articles .articles-cards .articles-card .articles-inf .data {
+  font-size: 12px;
+  margin: 0;
+  color: #8F8F8F;
+}
+main section .articles .articles-cards .articles-card .articles-inf h3 {
+  font-size: 18px;
+  color: #414141;
+  line-height: 27px;
+}
+main section .articles .articles-cards .articles-card .articles-inf p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  margin: 10px 0;
+}
+main section .articles .articles-cards .articles-card .articles-inf button {
+  width: 150px;
+  height: 40px;
+  background-color: #E5FFDE;
+  font-size: 16px;
+  border: none;
+  color: #70C05B;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+main section .articles .articles-cards .articles-card .articles-inf button:hover {
+  background-color: #70C05B;
+  color: #fff;
+}
 
 @media (max-width: 1024px) {
   main .free {
@@ -300,6 +362,17 @@ main section .lacation-shop .map {
   }
   main section .aksiya .cards .card:nth-child(4) {
     display: none;
+  }
+  main section .articles .articles-cards .articles-card {
+    height: auto;
+  }
+  main section .articles .articles-cards .articles-card .articles-inf h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main section .articles .articles-cards .articles-card .articles-inf p {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -342,6 +415,30 @@ main section .lacation-shop .map {
     align-items: center;
     gap: 15px;
   }
+  main section .articles .articles-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  main section .articles .articles-cards .articles-card {
+    width: 100%;
+    height: 300px;
+  }
+  main section .articles .articles-cards .articles-card img {
+    height: 96px;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section .articles .articles-cards .articles-card .articles-inf h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main section .articles .articles-cards .articles-card .articles-inf p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 @media (max-width: 460px) {
   header .menu .search-menu button {
@@ -380,6 +477,7 @@ main section .lacation-shop .map {
   }
   main section .lacation-shop .filials {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
