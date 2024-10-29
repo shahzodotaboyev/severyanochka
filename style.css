@@ -383,6 +383,47 @@ main .menu-bottom img {
   border-radius: 50px;
 }
 
+footer {
+  max-width: 1300px;
+  margin: auto;
+  height: 126px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .about {
+  display: flex;
+  gap: 40px;
+}
+footer .about a {
+  color: #414141;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .contact .icons i {
+  font-size: 30px;
+  gap: 16px;
+}
+footer .contact .phone-number i {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+footer .contact .phone-number i span {
+  font-size: 16px;
+  color: #414141;
+}
+footer .contact .phone-number p {
+  margin-top: 15px;
+  color: #414141;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   main .free {
     display: none;
@@ -402,6 +443,23 @@ main .menu-bottom img {
     line-height: 18px;
   }
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+}
+footer .contact .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   header .menu .logo {
     margin-right: 10px;
@@ -430,6 +488,9 @@ main .menu-bottom img {
   }
   main section .special-offers .special-offers-cards .card .card-left p {
     font-size: 12px;
+  }
+  footer .about {
+    display: none;
   }
 }
 @media (max-width: 570px) {

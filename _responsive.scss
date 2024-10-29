@@ -38,6 +38,25 @@
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5px;
+    }
+    .contact{
+        .icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+    }
+}
+
 @media (max-width:768px) {
     header {
         .menu {
@@ -101,6 +120,11 @@
             }
         }
     }
+footer{
+    .about{
+        display: none;
+    }
+}
 }
 
 @media (max-width:570px) {
