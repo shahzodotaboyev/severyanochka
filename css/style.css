@@ -25,6 +25,9 @@ header .menu {
   justify-content: space-between;
   padding: 10px;
 }
+header .menu .header-right .box i {
+  cursor: pointer;
+}
 header .menu .logo {
   display: flex;
   align-items: center;
@@ -79,6 +82,7 @@ header .menu .search-menu .input input {
 header .menu .search-menu .input i {
   font-size: 25px;
   color: #414141;
+  cursor: pointer;
 }
 header .menu .header-right {
   display: flex;

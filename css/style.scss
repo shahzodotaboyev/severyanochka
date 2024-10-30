@@ -25,6 +25,13 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+    .header-right{
+        .box{
+            i{
+                cursor: pointer;
+            }
+        }
+    }
 
         .logo {
             display: flex;
@@ -87,6 +94,7 @@ header {
                 i {
                     font-size: 25px;
                     color: #414141;
+                    cursor:pointer ;
                 }
             }
         }
