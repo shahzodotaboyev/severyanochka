@@ -8,6 +8,11 @@
   font-family: "Rubik";
 }
 
+.darkMode * {
+  background: #000;
+  color: #fff;
+}
+
 header {
   width: 100%;
   height: 72px;
@@ -366,7 +371,6 @@ main .menu-bottom {
   height: 56px;
   background-color: #fff;
   bottom: 0;
-  display: flex;
   padding: 10px;
   justify-content: space-between;
 }
