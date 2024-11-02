@@ -66,6 +66,29 @@ header .menu .search-menu button i {
   font-size: 25px;
   font-weight: normal;
 }
+header .menu .search-menu .qotolog {
+  width: 130%;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: -30%;
+  transition: all 1s ease;
+  padding: 40px 215px;
+  color: #000;
+  justify-content: space-between;
+  display: none;
+}
+header .menu .search-menu .qotolog ul {
+  line-height: 44px;
+}
+header .menu .search-menu .qotolog ul li:hover {
+  color: #FF6633;
+  cursor: pointer;
+}
+header .menu .search-menu .block {
+  display: flex;
+}
 header .menu .search-menu .input {
   width: 100%;
   max-width: 500px;

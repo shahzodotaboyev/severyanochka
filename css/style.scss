@@ -78,6 +78,33 @@ header {
                 }
             }
 
+            .qotolog {
+                width: 130%;
+                height: 250px;
+                background: #fff;
+                position: absolute;
+                top: 100%;
+                left: -30%;
+                transition: all 1s ease;
+                padding: 40px 215px;
+                color: #000;
+                justify-content: space-between;
+                display: none;
+
+                ul {
+              
+                    line-height: 44px;
+                    li:hover{
+                        color: #FF6633;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .block {
+                display: flex;
+            }
+
             .input {
                 width: 100%;
                 max-width: 500px;
