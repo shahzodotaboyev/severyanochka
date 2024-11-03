@@ -67,7 +67,7 @@ header {
             transition: all 1s ease;
             background: #fff;
             border: 1px solid #000;
-        
+
 
         }
 
@@ -536,16 +536,20 @@ main {
         justify-content: space-between;
 
         .box {
-
+            background: none;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             i {
+                background: none;
                 font-size: 24px;
+                color: #000;
             }
 
             p {
+                color: #000;
+                background: none;
                 font-size: 10px;
             }
         }
@@ -557,62 +561,64 @@ main {
         }
 
     }
+
 }
 
 footer {
     width: 100%;
- .in-footer{
-    max-width: 1300px;
-    margin: auto;
-    height: 126px;
-    // background-color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    .about {
+    .in-footer {
+        max-width: 1300px;
+        margin: auto;
+        height: 126px;
+        // background-color: red;
         display: flex;
-        gap: 40px;
-
-        a {
-            color: #414141;
-        }
-    }
-
-    .contact {
-        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 15px;
 
-        .icons {
-            i {
-                font-size: 30px;
-                gap: 16px;
+        .about {
+            display: flex;
+            gap: 40px;
+
+            a {
+                color: #414141;
             }
         }
 
-        .phone-number {
-            i {
-                display: flex;
-                align-items: center;
-                font-size: 24px;
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 15px;
 
-                span {
-                    font-size: 16px;
-                    color: #414141;
+            .icons {
+                i {
+                    font-size: 30px;
+                    gap: 16px;
                 }
             }
 
-            p {
-                margin-top: 15px;
-                color: #414141;
-                display: flex;
-                gap: 5px;
-                align-items: center;
+            .phone-number {
+                i {
+                    display: flex;
+                    align-items: center;
+                    font-size: 24px;
+
+                    span {
+                        font-size: 16px;
+                        color: #414141;
+                    }
+                }
+
+                p {
+                    margin-top: 15px;
+                    color: #414141;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                }
             }
         }
     }
- }
 }
 
 
