@@ -101,12 +101,19 @@ header .menu .search-menu .qotolog {
   position: absolute;
   top: 100%;
   left: 0%;
-  transition: all 1s ease;
-  padding: 40px 215px;
+  padding: 20px;
+  margin: auto;
   color: #000;
   align-items: center;
   justify-content: space-between;
   display: none;
+}
+header .menu .search-menu .qotolog .qotolog-header {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
 }
 header .menu .search-menu .qotolog ul {
   line-height: 44px;
@@ -425,6 +432,29 @@ main .menu-bottom {
   bottom: 0;
   padding: 10px;
   justify-content: space-between;
+}
+main .menu-bottom .qotolog-menu .qotolog-menu-in {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 90%;
+  height: 90vh;
+  background: #fff;
+  bottom: 100%;
+  padding: 15px;
+  justify-content: space-between;
+  left: 100%;
+  transition: all 0.5s ease;
+}
+main .menu-bottom .qotolog-menu .qotolog-menu-in a {
+  color: #000;
+  background: none;
+}
+main .menu-bottom .qotolog-menu .qotolog-menu-in a:hover {
+  color: #FF6633;
+}
+main .menu-bottom .qotolog-menu .left0 {
+  left: 0%;
 }
 main .menu-bottom .box {
   background: none;

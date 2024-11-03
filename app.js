@@ -15,4 +15,8 @@ let darkmodefn = () => {
     indarkmode.classList.toggle('in-light');
     body.classList.toggle('darkModeBody');
 }
+let menuQotolog = document.getElementsByClassName('qotolog-menu-in');
 
+let qotologBottom = () => {
+    menuQotolog[0].classList.toggle('left0');
+};

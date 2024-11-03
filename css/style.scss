@@ -118,19 +118,27 @@ header {
             }
 
             .qotolog {
+
                 width: 100%;
                 height: 250px;
                 background: #fff;
                 position: absolute;
                 top: 100%;
                 left: 0%;
-                transition: all 1s ease;
-                padding: 40px 215px;
+                padding: 20px;
+                margin: auto;
                 color: #000;
                 align-items: center;
                 justify-content: space-between;
                 display: none;
 
+                .qotolog-header {
+                    max-width: 1200px;
+                    width: 100%;
+                    margin: auto;
+                    justify-content: space-between;
+                    display: flex;
+                }
 
 
 
@@ -535,11 +543,43 @@ main {
         padding: 10px;
         justify-content: space-between;
 
+        .qotolog-menu {
+            .qotolog-menu-in {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 90%;
+                height: 90vh;
+                background: #fff;
+                bottom: 100%;
+                padding: 15px;
+                justify-content: space-between;
+                left:100%;
+                transition: all .5s ease;
+
+                a {
+                    color: #000;
+
+                    &:hover {
+                        color: #FF6633;
+                    }
+                    background: none;
+                }
+            }
+
+            .left0 {
+                left: 0%;
+            }
+
+
+        }
+
         .box {
             background: none;
             display: flex;
             flex-direction: column;
             align-items: center;
+
 
             i {
                 background: none;
