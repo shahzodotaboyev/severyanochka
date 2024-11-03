@@ -438,7 +438,7 @@ main .menu-bottom .qotolog-menu .qotolog-menu-in {
   flex-direction: column;
   position: absolute;
   width: 90%;
-  height: 90vh;
+  height: 100vh;
   background: #fff;
   bottom: 100%;
   padding: 15px;
