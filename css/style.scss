@@ -9,10 +9,9 @@
     font-family: 'Rubik';
 }
 
-.darkMode * {
-    background: #575454;
+.darkModeBody * {
     color: #fff;
-
+    background: #000;
 }
 
 header {
@@ -25,13 +24,52 @@ header {
     .menu {
         max-width: 1200px;
         width: 100%;
-        
+
         margin: auto;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+
+        .darkmode {
+            width: 55px;
+            height: 30px;
+            background: #000;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+            justify-content: start;
+
+            .inDarkmode {
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all .4s ease;
+
+
+
+
+            }
+
+            .in-light {
+                background: #000;
+                transition: all .4s ease;
+                margin-left: 25px;
+            }
+
+        }
+
+        .darkmode-right {
+            transition: all 1s ease;
+            background: #fff;
+            border: 1px solid #000;
+        
+
+        }
 
         .header-right {
             .box {
@@ -92,25 +130,27 @@ header {
                 align-items: center;
                 justify-content: space-between;
                 display: none;
-                
-              
-                   
 
-                    ul {
 
-                        line-height: 44px;
 
-                        li:hover {
-                            color: #FF6633;
-                            cursor: pointer;
-                        }
+
+                ul {
+
+                    line-height: 44px;
+
+                    li:hover {
+                        color: #FF6633;
+                        cursor: pointer;
                     }
-                
+                }
+
             }
 
             .block {
                 display: flex;
             }
+
+
 
             .input {
                 width: 100%;
@@ -520,6 +560,8 @@ main {
 }
 
 footer {
+    width: 100%;
+ .in-footer{
     max-width: 1300px;
     margin: auto;
     height: 126px;
@@ -570,6 +612,7 @@ footer {
             }
         }
     }
+ }
 }
 
 

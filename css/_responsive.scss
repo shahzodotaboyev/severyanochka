@@ -39,22 +39,26 @@
 }
 
 footer {
+.in-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
     .about {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 5px;
     }
-    .contact{
-        .icons{
+
+    .contact {
+        .icons {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
         }
     }
+}
 }
 
 @media (max-width:768px) {
@@ -120,11 +124,14 @@ footer {
             }
         }
     }
-footer{
-    .about{
-        display: none;
+
+    footer {
+      .in-footer{
+        .about {
+            display: none;
+        }
+      }
     }
-}
 }
 
 @media (max-width:570px) {

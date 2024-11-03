@@ -8,9 +8,9 @@
   font-family: "Rubik";
 }
 
-.darkMode * {
-  background: #575454;
+.darkModeBody * {
   color: #fff;
+  background: #000;
 }
 
 header {
@@ -29,6 +29,34 @@ header .menu {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+header .menu .darkmode {
+  width: 55px;
+  height: 30px;
+  background: #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  justify-content: start;
+}
+header .menu .darkmode .inDarkmode {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+header .menu .darkmode .in-light {
+  background: #000;
+  transition: all 0.4s ease;
+  margin-left: 25px;
+}
+header .menu .darkmode-right {
+  transition: all 1s ease;
+  background: #fff;
+  border: 1px solid #000;
 }
 header .menu .header-right .box i {
   cursor: pointer;
@@ -416,6 +444,9 @@ main .menu-bottom img {
 }
 
 footer {
+  width: 100%;
+}
+footer .in-footer {
   max-width: 1300px;
   margin: auto;
   height: 126px;
@@ -423,32 +454,32 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer .about {
+footer .in-footer .about {
   display: flex;
   gap: 40px;
 }
-footer .about a {
+footer .in-footer .about a {
   color: #414141;
 }
-footer .contact {
+footer .in-footer .contact {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-footer .contact .icons i {
+footer .in-footer .contact .icons i {
   font-size: 30px;
   gap: 16px;
 }
-footer .contact .phone-number i {
+footer .in-footer .contact .phone-number i {
   display: flex;
   align-items: center;
   font-size: 24px;
 }
-footer .contact .phone-number i span {
+footer .in-footer .contact .phone-number i span {
   font-size: 16px;
   color: #414141;
 }
-footer .contact .phone-number p {
+footer .in-footer .contact .phone-number p {
   margin-top: 15px;
   color: #414141;
   display: flex;
@@ -475,18 +506,18 @@ footer .contact .phone-number p {
     line-height: 18px;
   }
 }
-footer {
+footer .in-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-footer .about {
+footer .in-footer .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5px;
 }
-footer .contact .icons {
+footer .in-footer .contact .icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -521,7 +552,7 @@ footer .contact .icons {
   main section .special-offers .special-offers-cards .card .card-left p {
     font-size: 12px;
   }
-  footer .about {
+  footer .in-footer .about {
     display: none;
   }
 }
