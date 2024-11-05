@@ -7,12 +7,15 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Rubik';
+    outline: none;
+
 }
 
 .darkModeBody * {
     color: #fff;
     background: #000;
 }
+
 
 header {
     width: 100%;
@@ -95,7 +98,6 @@ header {
             align-items: center;
             gap: 16px;
 
-
             button {
                 width: auto;
                 height: 40px;
@@ -114,6 +116,7 @@ header {
                 i {
                     font-size: 25px;
                     font-weight: normal;
+                    background: none;
                 }
             }
 
@@ -121,7 +124,6 @@ header {
 
                 width: 100%;
                 height: 250px;
-                background: #fff;
                 position: absolute;
                 top: 100%;
                 left: 0%;
@@ -145,6 +147,7 @@ header {
                 ul {
 
                     line-height: 44px;
+                    background: none;
 
                     li:hover {
                         color: #FF6633;
@@ -156,6 +159,7 @@ header {
 
             .block {
                 display: flex;
+                background: #fff;
             }
 
 
@@ -554,7 +558,7 @@ main {
                 bottom: 100%;
                 padding: 15px;
                 justify-content: space-between;
-                left:100%;
+                left: 100%;
                 transition: all .5s ease;
 
                 a {
@@ -563,6 +567,7 @@ main {
                     &:hover {
                         color: #FF6633;
                     }
+
                     background: none;
                 }
             }

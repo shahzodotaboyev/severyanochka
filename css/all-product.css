@@ -6,6 +6,12 @@
   list-style: none;
   text-decoration: none;
   font-family: "Rubik";
+  outline: none;
+}
+
+.darkModeBody * {
+  color: #fff;
+  background: #000;
 }
 
 header {
@@ -14,7 +20,6 @@ header {
   background: #fff;
   position: sticky;
   top: 0;
-  margin: auto;
 }
 header .menu {
   max-width: 1200px;
@@ -25,6 +30,37 @@ header .menu {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+header .menu .darkmode {
+  width: 55px;
+  height: 30px;
+  background: #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  justify-content: start;
+}
+header .menu .darkmode .inDarkmode {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+header .menu .darkmode .in-light {
+  background: #000;
+  transition: all 0.4s ease;
+  margin-left: 25px;
+}
+header .menu .darkmode-right {
+  transition: all 1s ease;
+  background: #fff;
+  border: 1px solid #000;
+}
+header .menu .header-right .box i {
+  cursor: pointer;
 }
 header .menu .logo {
   display: flex;
@@ -58,6 +94,37 @@ header .menu .search-menu button {
 header .menu .search-menu button i {
   font-size: 25px;
   font-weight: normal;
+  background: none;
+}
+header .menu .search-menu .qotolog {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 20px;
+  margin: auto;
+  color: #000;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+header .menu .search-menu .qotolog .qotolog-header {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+}
+header .menu .search-menu .qotolog ul {
+  line-height: 44px;
+}
+header .menu .search-menu .qotolog ul li:hover {
+  color: #FF6633;
+  cursor: pointer;
+}
+header .menu .search-menu .block {
+  display: flex;
 }
 header .menu .search-menu .input {
   width: 100%;
@@ -80,6 +147,7 @@ header .menu .search-menu .input input {
 header .menu .search-menu .input i {
   font-size: 25px;
   color: #414141;
+  cursor: pointer;
 }
 header .menu .header-right {
   display: flex;
@@ -192,7 +260,7 @@ main .menu-bottom {
   height: 56px;
   background-color: #fff;
   bottom: 0;
-  display: flex;
+  display: none;
   justify-content: space-around;
 }
 main .menu-bottom .box {

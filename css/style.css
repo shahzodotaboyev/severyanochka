@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Rubik";
+  outline: none;
 }
 
 .darkModeBody * {
@@ -93,11 +94,11 @@ header .menu .search-menu button {
 header .menu .search-menu button i {
   font-size: 25px;
   font-weight: normal;
+  background: none;
 }
 header .menu .search-menu .qotolog {
   width: 100%;
   height: 250px;
-  background: #fff;
   position: absolute;
   top: 100%;
   left: 0%;
@@ -117,6 +118,7 @@ header .menu .search-menu .qotolog .qotolog-header {
 }
 header .menu .search-menu .qotolog ul {
   line-height: 44px;
+  background: none;
 }
 header .menu .search-menu .qotolog ul li:hover {
   color: #FF6633;
@@ -124,6 +126,7 @@ header .menu .search-menu .qotolog ul li:hover {
 }
 header .menu .search-menu .block {
   display: flex;
+  background: #fff;
 }
 header .menu .search-menu .input {
   width: 100%;
