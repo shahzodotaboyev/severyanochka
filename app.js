@@ -21,19 +21,3 @@ let qotologBottom = () => {
     menuQotolog[0].classList.toggle('left0');
 };
 
-window.onload = () => {
-    const input = document.querySelector('.input input'); 
-    const cards = document.querySelectorAll('.card'); 
-
-    input.oninput = function () {
-        const value = this.value.trim().toLowerCase(); 
-        cards.forEach(card => {
-            const productText = card.querySelector('#search-p').innerText.toLowerCase();
-            if (productText.includes(value)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none'; 
-            }
-        });
-    };
-};
