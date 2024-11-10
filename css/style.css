@@ -20,6 +20,7 @@ header {
   background: #fff;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 header .menu {
   max-width: 1200px;
@@ -184,6 +185,7 @@ header .menu .header-right .accaunt h3 {
 }
 
 main {
+  z-index: 1;
   background: #FBF8EC;
   display: flex;
   flex-direction: column;
@@ -237,8 +239,54 @@ main section .aksiya .cards .card {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-main section .aksiya .cards .card img {
+main section .aksiya .cards .card .img {
+  background-image: url(../img/image.png);
+  background-repeat: no-repeat;
   width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section .aksiya .cards .card .img .out-heart {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: rgba(128, 128, 128, 0.377);
+  justify-content: center;
+  margin-left: 230px;
+}
+main section .aksiya .cards .card .img .out-heart .heart {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: rotate(-45deg);
+  margin: 50px auto;
+  cursor: pointer;
+}
+main section .aksiya .cards .card .img .out-heart .heart::before, main section .aksiya .cards .card .img .out-heart .heart::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+}
+main section .aksiya .cards .card .img .out-heart .heart::before {
+  top: -7.5px;
+  left: 0;
+}
+main section .aksiya .cards .card .img .out-heart .heart::after {
+  top: 0;
+  left: 7.5px;
+}
+main section .aksiya .cards .card .img .out-heart .bg-red {
+  background: red;
+}
+main section .aksiya .cards .card .img .out-heart .bg-red::before, main section .aksiya .cards .card .img .out-heart .bg-red::after {
+  background: red;
 }
 main section .aksiya .cards .card .inf {
   max-width: 100%;
